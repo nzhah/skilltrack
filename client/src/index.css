@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette */
+  --primary-color: #6366f1;      /* Indigo */
+  --primary-light: #818cf8;      /* Light Indigo */
+  --primary-dark: #4f46e5;       /* Dark Indigo */
+  --accent-color: #ec4899;       /* Pink */
+  --accent-light: #f472b6;       /* Light Pink */
+  --success-color: #10b981;      /* Emerald */
+  --warning-color: #f59e0b;      /* Amber */
+  --danger-color: #ef4444;       /* Red */
+  
+  /* Neutrals */
+  --background: #f9fafb;         /* Very Light Gray */
+  --surface: #ffffff;            /* White */
+  --surface-secondary: #f3f4f6;  /* Light Gray */
+  --text-primary: #111827;       /* Dark Gray */
+  --text-secondary: #6b7280;     /* Medium Gray */
+  --text-tertiary: #9ca3af;      /* Light Gray */
+  --border-color: #e5e7eb;       /* Border Gray */
+  
+  /* Category Colors */
+  --category-frontend: #8b5cf6;  /* Violet */
+  --category-backend: #06b6d4;   /* Cyan */
+  --category-database: #ec4899;  /* Pink */
+  --category-devops: #f59e0b;    /* Amber */
+  --category-testing: #10b981;   /* Emerald */
+  --category-other: #6b7280;     /* Gray */
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --primary-color: #818cf8;      /* Light Indigo */
+  --primary-light: #a5b4fc;      /* Lighter Indigo */
+  --primary-dark: #6366f1;       /* Indigo */
+  --accent-color: #f472b6;       /* Light Pink */
+  --accent-light: #fbcfe8;       /* Lighter Pink */
+  --success-color: #34d399;      /* Light Emerald */
+  --warning-color: #fbbf24;      /* Light Amber */
+  --danger-color: #f87171;       /* Light Red */
+  
+  /* Dark Mode Neutrals */
+  --background: #0f172a;         /* Very Dark Blue */
+  --surface: #1e293b;            /* Dark Slate */
+  --surface-secondary: #334155;  /* Medium Slate */
+  --text-primary: #f1f5f9;       /* Light Gray */
+  --text-secondary: #cbd5e1;     /* Medium Gray */
+  --text-tertiary: #94a3b8;      /* Darker Gray */
+  --border-color: #475569;       /* Dark Border */
+  
+  /* Dark Mode Category Colors */
+  --category-frontend: #c4b5fd;  /* Light Violet */
+  --category-backend: #67e8f9;   /* Light Cyan */
+  --category-database: #f472b6;  /* Light Pink */
+  --category-devops: #fcd34d;    /* Light Amber */
+  --category-testing: #6ee7b7;   /* Light Emerald */
+  --category-other: #cbd5e1;     /* Light Gray */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #eef2ff 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+html[data-theme="dark"] {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1a1f3a 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 10px;
+  border: 2px solid var(--surface-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
