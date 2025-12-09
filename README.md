@@ -4,13 +4,13 @@ A full-stack web application for developers to track their learning progress, ra
 
 ## 🎯 Features
 
-### Core Features ✅
-- **🔐 Secure Authentication**: Register and login with JWT-based authentication
-- **💾 Skill Management**: Add, edit, and delete skills with detailed information
-- **📈 Progress Tracking**: Monitor proficiency levels (1-5 scale) and progress percentages
-- **📚 Learning Resources**: Attach learning links (tutorials, documentation, videos)
-- **🧠 Interactive Dashboard**: View statistics, charts, and recent updates
-- **🎨 Beautiful UI**: Responsive design with Recharts visualizations
+### Core Features
+- **Secure Authentication**: Register and login with JWT-based authentication
+- **Skill Management**: Add, edit, and delete skills with detailed information
+- **Progress Tracking**: Monitor proficiency levels (1-5 scale) and progress percentages
+- **Learning Resources**: Attach learning links (tutorials, documentation, videos)
+- **Interactive Dashboard**: View statistics, charts, and recent updates
+- **Beautiful UI**: Responsive design with Recharts visualizations
 
 ### Advanced Features
 - Filter skills by category (Frontend, Backend, Database, DevOps, Testing, Other)
@@ -39,15 +39,10 @@ A full-stack web application for developers to track their learning progress, ra
 - **JWT** - Secure token-based authentication
 - **bcryptjs** - Password hashing
 
-### Testing & Development
-- **Jest** - Testing framework
-- **Nodemon** - Auto-reload development server
-- **Supertest** - HTTP assertion library
+### Development
 - **dotenv** - Environment variable management
 
 ### Deployment
-- **Vercel** - Frontend hosting
-- **Render/Railway** - Backend hosting
 - **MongoDB Atlas** - Managed database
 
 ---
@@ -474,94 +469,7 @@ npm run test:coverage # Coverage report
 - Connection pooling
 - Aggregation pipelines for analytics
 
----
-
-## 🐛 Common Issues & Solutions
-
-### MongoDB Connection Failed
-```
-Error: MongooseError: Cannot connect to MongoDB
-
-Solution:
-1. Verify MONGO_URI in .env
-2. Check IP whitelist in MongoDB Atlas
-3. Ensure password doesn't contain special characters
-```
-
-### CORS Error
-```
-Error: Access to XMLHttpRequest blocked by CORS
-
-Solution:
-1. Verify CLIENT_URL in .env matches frontend origin
-2. Check CORS middleware is enabled in server.js
-3. For production, update CLIENT_URL to Vercel URL
-```
-
-### Token Expired
-```
-Error: Not authorized to access this route
-
-Solution:
-1. Clear localStorage in browser DevTools
-2. Login again to get new token
-3. Token stored in Authorization header
-```
-
----
-
-## 📚 Learning Resources
-
-### Web Development
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [JavaScript.info](https://javascript.info/)
-
-### React
-- [React Official Docs](https://react.dev/)
-- [React Router](https://reactrouter.com/)
-
-### Node.js & Express
-- [Express.js Guide](https://expressjs.com/)
-- [Node.js Official Docs](https://nodejs.org/docs/)
-
-### Database
-- [MongoDB Manual](https://docs.mongodb.com/manual/)
-- [Mongoose Documentation](https://mongoosejs.com/)
-
-### Security
-- [JWT.io](https://jwt.io/)
-- [OWASP Security](https://owasp.org/)
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit changes (`git commit -m "feat: add new feature"`)
-4. Push to branch (`git push origin feature/new-feature`)
-5. Open a Pull Request
-
-### Commit Convention
-```
-feat: new feature
-fix: bug fix
-docs: documentation
-test: tests
-refactor: code refactoring
-style: styling changes
-chore: dependencies
-```
-
----
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 🎓 Skills Showcased
+## Skills Showcased
 
 This project demonstrates proficiency in:
 
@@ -576,26 +484,3 @@ This project demonstrates proficiency in:
 - ✅ **Deployment** - Vercel, Render, cloud services
 - ✅ **Problem Solving** - Error handling, debugging
 
----
-
-## 📞 Contact & Support
-
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
-
----
-
-## 🙏 Acknowledgments
-
-- MongoDB Atlas for free database hosting
-- Vercel for frontend deployment
-- Render for backend hosting
-- Recharts for beautiful visualizations
-- The React & Node.js communities
-
----
-
-**Happy coding! 🚀** Keep tracking your skills and never stop learning!
-
-*Last Updated: November 12, 2025*
